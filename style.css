@@ -1,0 +1,250 @@
+body{
+    position: relative;
+    background-color:  hsl(300, 24%, 96%);
+    font-family: 'League Spartan';
+}
+
+.container{
+    max-width: 340px;
+    width: 340px;
+    max-height: 250px;
+    height: 250px;
+    color:  hsl(300, 43%, 22%);
+    position: absolute;
+    left: 150px;
+    top: 20px;
+    margin: 0px;
+}
+
+.container h1{
+    font-size: 40px;
+}
+
+.container p{
+     line-height: 20px;
+     font-size: 14px;
+}
+
+.first-section, .second-section, .third-section{
+    max-width: 330px;
+    width: 330px;
+    max-height: 40px;
+    height: 40px;
+    background-color:  hsla(300, 24%, 73%, 0.2);
+    position: absolute;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding: right 10px; ;
+}
+
+.first-section img, .second-section img, .third-section img{
+    width: 13px;
+    height: 13px;
+    margin: 0px;
+    margin: 12px 0px 0px 10px;
+}
+
+.first-section p, .second-section p, .third-section p{
+    margin-bottom: 25px;
+    margin-top: 12px;
+    color: hsl(300, 43%, 22%);
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.first-section{
+    top: 60px;
+    left: 700px;
+}
+
+.second-section{
+    top: 120px;
+    left: 750px;
+}
+
+.third-section{
+    top: 180px;
+    left: 800px;
+}
+
+.colton, .irene, .anne{
+    max-width: 300px;
+    width: 300px;
+    max-height: 180px;
+    height: 180px;
+    background-color: hsl(300, 43%, 22%);
+    color:  hsl(0, 0%, 100%);
+    margin: 20px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.colton img, .irene img, .anne img{
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 25px 20px 10px 20px;
+}
+
+.name-section{
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 20px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 25px;
+
+}
+
+.colton{
+    top: 300px;
+    left: 100px;
+}
+
+.anne{
+    top: 320px;
+    left: 430px;
+}
+
+.irene{
+    top: 340px;
+    left: 760px;
+}
+
+.div-description{
+    margin: 20px;
+    font-size: 14px;
+
+}
+
+
+.name{
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.buyer{
+    margin: 3px 0px 3px 0px;
+    padding: 0px;
+    color:  hsl(333, 80%, 67%);
+}
+
+.attribution {
+    position: absolute;
+        top: 550px;
+        left: 400px;
+        font-size: 11px;
+        text-align: center;
+      }
+.attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+
+    @media screen and (max-width: 1024px) {
+  /* Make all absolute positions static for responsiveness */
+  .container,
+  .first-section,
+  .second-section,
+  .third-section,
+  .colton,
+  .irene,
+  .anne,
+  .name-section,
+  .attribution {
+    position: static !important;
+    transform: none !important;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .container {
+    width: 90%;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .container h1 {
+    font-size: 30px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+
+  .first-section,
+  .second-section,
+  .third-section {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-section img,
+  .second-section img,
+  .third-section img {
+    margin: 5px;
+  }
+
+  .first-section p,
+  .second-section p,
+  .third-section p {
+    margin-left: 10px;
+    font-size: 13px;
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  .colton,
+  .irene,
+  .anne {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .name-section {
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .div-description {
+    padding: 0 15px 10px;
+    font-size: 14px;
+  }
+
+  .attribution {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .first-section p,
+  .second-section p,
+  .third-section p {
+    font-size: 12px;
+  }
+
+  .colton img,
+  .irene img,
+  .anne img {
+    width: 25px;
+    margin: 20px 10px 0px 10px;
+  }
+}
